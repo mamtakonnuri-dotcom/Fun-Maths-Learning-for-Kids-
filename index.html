@@ -9,14 +9,14 @@
 <body>
 <header>
   <div class="brand">🌟 Fun Maths Learning</div>
-  <p>Learn • Play • Multiply • Divide</p>
+  <p>Learn • Play • Addition • Substraction • Multiply • Divide</p>
 </header>
 
 <main>
   <section id="home" class="screen active">
     <div class="hero">
       <h1>Welcome to Fun Maths! 🧮</h1>
-      <p>Learn multiplication and division through simple games.</p>
+      <p>Learn  addition , substraction ,multiplication and division through simple games.</p>
       <h2>Choose your level</h2>
       <div class="levels">
         <button onclick="setLevel(1)">🟢 Easy<br><small>Classes 1–2</small></button>
@@ -30,6 +30,8 @@
     <button class="back" onclick="show('home')">← Home</button>
     <h1>Choose an Activity 🎮</h1>
     <div class="cards">
+      <button class="card" onclick="startQuiz('add')"><span>➕</span><b>Addition Quiz</b><small>Add numbers and find the answer</small></button>
+      <button class="card" onclick="startQuiz('sub')"><span>➖</span><b>Subtraction Quiz</b><small>Subtract numbers and find the answer</small></button>
       <button class="card" onclick="startQuiz('mul')"><span>✖️</span><b>Multiplication Quiz</b><small>Find the correct answer</small></button>
       <button class="card" onclick="startQuiz('div')"><span>➗</span><b>Division Quiz</b><small>Share and solve</small></button>
       <button class="card" onclick="startGroups()"><span>🍎</span><b>Equal Groups</b><small>See multiplication visually</small></button>
