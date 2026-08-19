@@ -1,53 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fun Maths Learning</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fun Maths Learning</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
 <header>
   <div class="brand">🌟 Fun Maths Learning</div>
-  <p>Learn • Play • Addition • Substraction • Multiply • Divide</p>
+  <p>Learn • Play • Add • Subtract • Multiply • Divide</p>
 </header>
 
 <main>
+
+  <!-- HOME -->
   <section id="home" class="screen active">
+
     <div class="hero">
       <h1>Welcome to Fun Maths! 🧮</h1>
-      <p>Learn  addition , substraction ,multiplication and division through simple games.</p>
+
+      <p>
+        Learn Maths through fun games and activities.
+      </p>
+
       <h2>Choose your level</h2>
+
       <div class="levels">
-        <button onclick="setLevel(1)">🟢 Easy<br><small>Classes 1–2</small></button>
-        <button onclick="setLevel(2)">🟡 Medium<br><small>Classes 3–4</small></button>
-        <button onclick="setLevel(3)">🔴 Challenge<br><small>Class 5</small></button>
+
+        <button onclick="setLevel(1)">
+          🟢 Easy
+          <br>
+          <small>Classes 1–2</small>
+        </button>
+
+        <button onclick="setLevel(2)">
+          🟡 Medium
+          <br>
+          <small>Classes 3–4</small>
+        </button>
+
+        <button onclick="setLevel(3)">
+          🔴 Challenge
+          <br>
+          <small>Class 5</small>
+        </button>
+
       </div>
     </div>
+
   </section>
 
+
+  <!-- ACTIVITIES -->
   <section id="menu" class="screen">
-    <button class="back" onclick="show('home')">← Home</button>
+
+    <button class="back" onclick="show('home')">
+      ← Home
+    </button>
+
     <h1>Choose an Activity 🎮</h1>
+
     <div class="cards">
-      <button class="card" onclick="startQuiz('add')"><span>➕</span><b>Addition Quiz</b><small>Add numbers and find the answer</small></button>
-      <button class="card" onclick="startQuiz('sub')"><span>➖</span><b>Subtraction Quiz</b><small>Subtract numbers and find the answer</small></button>
-      <button class="card" onclick="startQuiz('mul')"><span>✖️</span><b>Multiplication Quiz</b><small>Find the correct answer</small></button>
-      <button class="card" onclick="startQuiz('div')"><span>➗</span><b>Division Quiz</b><small>Share and solve</small></button>
-      <button class="card" onclick="startGroups()"><span>🍎</span><b>Equal Groups</b><small>See multiplication visually</small></button>
-      <button class="card" onclick="startShare()"><span>🐰</span><b>Fair Sharing</b><small>Learn division with pictures</small></button>
-      <button class="card" onclick="startRace()"><span>🚗</span><b>Math Race</b><small>Answer to move your car</small></button>
-      <button class="card" onclick="startMissing()"><span>🧩</span><b>Missing Number</b><small>Complete the equation</small></button>
+
+      <button class="card" onclick="startQuiz('add')">
+        <span>➕</span>
+        <b>Addition Quiz</b>
+        <small>Add numbers and find the answer</small>
+      </button>
+
+      <button class="card" onclick="startQuiz('sub')">
+        <span>➖</span>
+        <b>Subtraction Quiz</b>
+        <small>Subtract numbers and find the answer</small>
+      </button>
+
+      <button class="card" onclick="startQuiz('mul')">
+        <span>✖️</span>
+        <b>Multiplication Quiz</b>
+        <small>Find the correct answer</small>
+      </button>
+
+      <button class="card" onclick="startQuiz('div')">
+        <span>➗</span>
+        <b>Division Quiz</b>
+        <small>Share and solve</small>
+      </button>
+
+      <button class="card" onclick="startGroups()">
+        <span>🍎</span>
+        <b>Equal Groups</b>
+        <small>See multiplication visually</small>
+      </button>
+
+      <button class="card" onclick="startShare()">
+        <span>🐰</span>
+        <b>Fair Sharing</b>
+        <small>Learn division with pictures</small>
+      </button>
+
+      <button class="card" onclick="startRace()">
+        <span>🚗</span>
+        <b>Math Race</b>
+        <small>Answer to move your car</small>
+      </button>
+
+      <button class="card" onclick="startMissing()">
+        <span>🧩</span>
+        <b>Missing Number</b>
+        <small>Complete the equation</small>
+      </button>
+
     </div>
+
   </section>
 
+
+  <!-- GAME -->
   <section id="game" class="screen">
-    <button class="back" onclick="show('menu')">← Activities</button>
+
+    <button class="back" onclick="show('menu')">
+      ← Activities
+    </button>
+
     <div id="gameContent"></div>
+
   </section>
+
 </main>
 
-<footer>Made for young learners ❤️ | Free & open-source project</footer>
+
+<footer>
+  Made for young learners ❤️ | Free & open-source project
+</footer>
+
+
+<!-- JAVASCRIPT -->
 <script src="script.js"></script>
+
 </body>
 </html>
