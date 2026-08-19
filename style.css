@@ -1,0 +1,31 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(135deg,#fff7d6,#e7f7ff);color:#263238;min-height:100vh}
+header{text-align:center;padding:24px 16px;background:#fff;border-bottom:3px solid #e5e7eb}
+.brand{font-size:30px;font-weight:800}
+header p{margin:6px 0 0;font-size:16px}
+main{max-width:1000px;margin:auto;padding:24px 16px}
+.screen{display:none}.screen.active{display:block}
+.hero{text-align:center;background:#fff;border-radius:28px;padding:36px 20px;box-shadow:0 8px 30px #00000012}
+h1{font-size:34px;margin:12px 0}h2{margin-top:28px}
+.levels,.cards{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));margin-top:20px}
+button{font:inherit;cursor:pointer;border:0;border-radius:18px;padding:16px;transition:.15s}
+button:hover{transform:translateY(-2px)}
+.levels button{background:#f1f5f9;font-weight:700;min-height:95px}
+.cards{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.card{background:#fff;min-height:160px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;box-shadow:0 5px 20px #00000010}
+.card span{font-size:42px}.card b{font-size:19px}.card small{color:#607d8b}
+.back{background:#fff;margin-bottom:16px;padding:10px 16px}
+.gamebox{background:#fff;border-radius:28px;padding:30px;text-align:center;box-shadow:0 8px 30px #00000012}
+.question{font-size:42px;font-weight:800;margin:20px}
+.answers{display:grid;grid-template-columns:repeat(2,minmax(120px,1fr));gap:14px;max-width:500px;margin:20px auto}
+.answer{background:#e8f5e9;font-size:26px;font-weight:700}
+.feedback{min-height:32px;font-size:20px;font-weight:700}
+.objects{font-size:30px;line-height:1.8;margin:20px auto;max-width:700px}
+.group{display:inline-block;background:#f3f4f6;border-radius:14px;padding:10px 14px;margin:5px}
+.score{font-weight:700;font-size:18px}
+.progress{height:14px;background:#e5e7eb;border-radius:20px;overflow:hidden;margin:15px auto;max-width:600px}
+.bar{height:100%;width:0;background:#4caf50;transition:.3s}
+.car-track{font-size:48px;white-space:nowrap;overflow:hidden;background:#e8f5e9;border-radius:18px;padding:12px;margin:18px 0}
+#car{display:inline-block;transform:translateX(0);transition:.4s}
+footer{text-align:center;padding:20px;color:#607d8b}
+@media(max-width:600px){h1{font-size:28px}.question{font-size:34px}.answers{grid-template-columns:1fr 1fr}}
